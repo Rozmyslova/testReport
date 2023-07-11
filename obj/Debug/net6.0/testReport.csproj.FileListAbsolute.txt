@@ -1,0 +1,15 @@
+E:\DASHA\Работа\rdc\testReport\bin\Debug\net6.0\testReport.exe
+E:\DASHA\Работа\rdc\testReport\bin\Debug\net6.0\testReport.deps.json
+E:\DASHA\Работа\rdc\testReport\bin\Debug\net6.0\testReport.runtimeconfig.json
+E:\DASHA\Работа\rdc\testReport\bin\Debug\net6.0\testReport.dll
+E:\DASHA\Работа\rdc\testReport\bin\Debug\net6.0\testReport.pdb
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.csproj.AssemblyReference.cache
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.GeneratedMSBuildEditorConfig.editorconfig
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.AssemblyInfoInputs.cache
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.AssemblyInfo.cs
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.csproj.CoreCompileInputs.cache
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.dll
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\refint\testReport.dll
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.pdb
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\testReport.genruntimeconfig.cache
+E:\DASHA\Работа\rdc\testReport\obj\Debug\net6.0\ref\testReport.dll
