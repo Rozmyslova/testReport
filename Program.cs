@@ -1,28 +1,66 @@
 ﻿using System;
-using System.IO;
+//using System.IO;
+using System.Text.RegularExpressions;
 
 class Test
 {
     public static void Main()
-    { 
+    {
         // тестовая строка
-        String strTest = "test";
+        String strTest = "         ";
         Console.WriteLine(strTest);
 
-        // запуск теста
+        //Проверка IP адреса     
+        Regex check = new Regex(@"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}");
+        Console.WriteLine(check.IsMatch(strTest));
+
+        // Проверка логина
+        Regex login_regex = new Regex("^[a-zA-Zа-яА-Я0-9 !$&%'()*+,-./:;<=>?#_]{0,30}$");
+        if (login_regex.IsMatch(strTest))  {
+            Console.WriteLine("ок");
+        }
+        else {
+            Console.WriteLine("ошибка");
+        }
+
+        // Проверка пароля
+        Regex password_regex = new Regex("^[a-zA-Zа-яА-Я0-9 !$&%'()*+,-./:;<=>?#_]{6,30}$");
+        if (password_regex.IsMatch(strTest)){
+            Console.WriteLine("ок");
+        }
+        else Console.WriteLine("ошибка");
+        }
+
+
+        
+        
+        
+        //string source = "ivanov98";
+ 
+        /* if (login_regex.Match(strTest).Success) // если совпадение удачно 
+        {
+        Console.WriteLine("Login is correct");
+        }
+        else
+        {
+        Console.WriteLine("Login is incorrect");
+        }*/
+
+
+// запуск теста
         //Console.WriteLine("start");
-        DateTime testTime = new DateTime();
+        /*DateTime testTime = new DateTime();
         testTime = DateTime.Now;
 
         // проверка корректности
         int testOk = 0;
         List<string> testFail = new List<string>();
         bool a = true;
-
+        Console.WriteLine("bool = " + a);
+        Console.ReadLine();
         for (int i = 1; i < strTest.Length + 1; i++)
         {
             bool cont = CorTest();
-            //Console.WriteLine("cont = " + cont);
             if (a == cont)
             {
                 testOk++;
@@ -33,10 +71,13 @@ class Test
             }
             Thread.Sleep(1000);
         }
-        //Console.WriteLine("finish");
+        Console.WriteLine("finish");
         // отчет
+        
+        
         string strTestTime = testTime.ToString(); 
-        string result = "report\n" + "название тестов " + " тесты запущены "+ testTime.ToString() + "всего тестов ";
+        string result = "report\n" + "название тестов \n" + " тесты запущены "+ testTime.ToString() 
+                        + "\n всего тестов " + testOk.ToString();
         Console.WriteLine(result);
         Console.WriteLine("report");
         Console.WriteLine("название тестов");
@@ -59,7 +100,7 @@ class Test
         }
 
 
-        string path = @"E:\DASHA\Работа\rdc\Test1.txt";
+        string path = @"E:\DASHA\Работа\rdc\Test2.txt";
         if (!File.Exists(path))
         {
             // Create a file to write to.
@@ -67,8 +108,7 @@ class Test
             {
                 sw.WriteLine(result);
             }
-        }
-    }
-}
+        }*/
 
+}
 
